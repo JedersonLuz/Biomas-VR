@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class InfoPopUp : MonoBehaviour {
 
-	Canvas popUp;
+	public Canvas popUp;
 
-	public void showPopUp () {
-		popUp.enabled = true;
+	public void ShowPopUp () {
+		Debug.Log ("Pointer Down");
+		popUp.gameObject.SetActive (true);
 	}
 }
